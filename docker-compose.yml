@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  dotnet:
+    container_name: dotnet10-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    tty: true
