@@ -1,7 +1,7 @@
 # Programador de Sistemas 
 Período: 02/02/2026 a 27/04/2026    
 Horário: Segunda, Terça, Quarta, Quinta e Sexta - 13:30 às 17:30    
-https://www.sp.senac.br/senac-lapa-tito/cursos-livres/curso-de-banco-de-dados-para-web    
+https://www.sp.senac.br/senac-lapa-tito/cursos-livres/curso-de-programador-de-sistemas    
 
 ## Programador de Sistemas - 200 horas  
 - Desenvolver sistemas de informação    
