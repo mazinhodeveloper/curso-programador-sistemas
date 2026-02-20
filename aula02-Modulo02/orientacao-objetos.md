@@ -57,13 +57,43 @@ ACL
 | +                          | -                             | # Número de Telefone       |   
 | +                          | - Senha                       | #                          |   
 | +                          | - Verificação de 2 etapas     | #                          |   
-| +                          | -                             | #                          |   
+| +                          | - ACL:ACL                     | #                          |  
+| +                          | - Status:Status               | #                          |  
+| +                          | - Perfil:Perfil               | #                          |  
 
-## Sinais Metodos de Classe 
+### Sinais Metodos de Classe 
 | Classe Nome                | Classe Atributos              | Sinais                     |   
 |--------------------------- | ----------------------------- | -------------------------- |   
 | Usuario                    | + Criar                       | Público                    |   
 |                            | - Editar                      | Privado                    |   
 |                            | + Consultar                   | Público                    |    
 |                            | - Editar (Excluir)            | Privado                    |    
+
+### Classe ACL 
+| ACL (Privado)              | Sinais                     |     
+| -------------------------- | -------------------------- |    
+| - ID                       | Privado                    |    
+| - Tipo                     | Privado                    |    
+| - Descrição                | Privado                    |    
+| -------------------------- | -------------------------- |   
+| - Consulta                 | Privado                    |    
+
+### Classe Status 
+| Status (Privado)           | Sinais                     |     
+| -------------------------- | -------------------------- |    
+| - ID                       | Privado                    |    
+| - Tipo                     | Privado                    |    
+| - Descrição                | Privado                    |    
+| -------------------------- | -------------------------- |   
+| - Consulta                 | Privado                    |    
+
+### Classe Perfil 
+| Perfil (Privado)           | Sinais                     |     
+| -------------------------- | -------------------------- |    
+| - ID                       | Privado                    |    
+| - Tipo                     | Privado                    |    
+| - Descrição                | Privado                    |    
+| -------------------------- | -------------------------- |   
+| - Consulta                 | Privado                    |    
+
 
