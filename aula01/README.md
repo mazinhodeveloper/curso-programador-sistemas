@@ -1,4 +1,4 @@
-> Aula 01 / Módulo 02    
+> Aula 01 / Módulo 01    
 > Docente: Nerildo Viana da Silva     
 > Data: 19/02/2026   
 
