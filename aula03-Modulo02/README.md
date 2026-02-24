@@ -20,8 +20,13 @@ Levantamento de Requisitos
 - Sistem de Login     
 - Usuário    
   - Status Ativo / Perfil   
+- Contato    
+- Grupo    
+- Chat     
+- Chamada     
 
 
 ##### Recomandações 
-- https://contabo.com 
+- https://draw.io    
+- https://app.diagrams.net     
 
