@@ -1,6 +1,6 @@
-> Aula 05 / Módulo 02    
+> Aula 07 / Módulo 02    
 > Docente: Nerildo Viana da Silva     
-> Data: 26/02/2026     
+> Data: 03/03/2026     
 
 # Programador de Sistemas 
 Período: 02/02/2026 a 27/04/2026    
