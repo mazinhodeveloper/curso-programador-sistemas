@@ -1,0 +1,15 @@
+-- USE master; 
+-- GO 
+
+-- DROP DATABASE dbZapTito; 
+-- GO 
+
+ALTER DATABASE dbZapTito SET SINGLE_USER WITH ROLLBACK IMMEDIATE; 
+GO 
+
+DROP DATABASE dbZapTito; 
+GO 
+
+-- USE dbZapTito; 
+-- SELECT * FROM USUARIO; 
+-- GO 
