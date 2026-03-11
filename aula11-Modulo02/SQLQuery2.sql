@@ -2,7 +2,7 @@
 USE dbZapTito; 
 GO 
   
-/*
+/* 
 -- # 2. Inserir dado na tabela ztACL 
 INSERT INTO ztACL (tipo, descricao) 
 	VALUES 
@@ -65,7 +65,7 @@ MERGE INTO ztPERFIL AS Target
 		UPDATE SET Target.descricao = Source.descricao; 
 GO 
 */ 
-/*
+/* 
 -- # 6. Inserir multiplos dados na tabela ztDISPOSITIVO 
 MERGE INTO ztDISPOSITIVO AS Target 
 	USING (
@@ -84,6 +84,8 @@ MERGE INTO ztDISPOSITIVO AS Target
 		UPDATE SET Target.dispositivo = Source.dispositivo; 
 GO 
 */ 
+
+-- # 7. Selecionando cada tabela individualmente 
 SELECT * FROM ztACL; 
 GO 
 SELECT * FROM ztSTATUS; 
