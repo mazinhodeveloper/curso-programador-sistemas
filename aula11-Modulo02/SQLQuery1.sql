@@ -212,7 +212,7 @@ CREATE TABLE ztCHAT(
 		REFERENCES ztSTATUS(idStatus) 
 		ON DELETE NO ACTION 
 		ON UPDATE NO ACTION 
-);
+); 
 */ 
 -- SELECT * FROM ztCHAT; 
 -- FIM - Compartilhado  
