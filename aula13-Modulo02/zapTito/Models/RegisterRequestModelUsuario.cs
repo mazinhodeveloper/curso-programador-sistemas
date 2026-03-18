@@ -8,7 +8,7 @@ namespace zapTito.Models
         [Required (ErrorMessage = "O nome é obrigatório!")]
         public string nome { get; set; } = string.Empty;
         [Required (ErrorMessage = "A data de nascimento é obrigatória.")]
-        public string dataNascimento { get; set; } = string.Empty;
+        public DateTime dataNascimento { get; set; }
         [Required(ErrorMessage = "O número de telefone é obrigatório!")]
         public string numeroTelefone { get; set; } = string.Empty;
         [Required (ErrorMessage = "A senha é obrigatória!")]
