@@ -22,7 +22,7 @@ Install-Package Azure.Identity
 ### Atualizar o Azure   
 Update-Package Azure.Identity    
     
-### Install p SqlClient    
+### Install o SqlClient    
 Install-Package Microsoft.Data.SqlClient    
     
 ### Instalar o Swagger    

@@ -1,5 +1,5 @@
 > Aula 13 / Módulo 02    
-> Docente: Celso Luis Caldeira      
+> Docente: Nerildo Viana da Silva       
 > Data: 17/03/2026      
 
 # Programador de Sistemas  
