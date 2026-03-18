@@ -35,6 +35,8 @@ Install-Package Microsoft.ApplicationInsights.AspNetCore
 ### Instalar BCrypt    
 Install-Package BCrypt.Net-Next  
 
+## Pacotes NuGet     
+-- Abrir o terminal      
 ### Adicionar pacotes usando Visual Studio Code (Terminal)     
 dotnet add package Azure.Identity
 dotnet add package Microsoft.Data.SqlClient    
