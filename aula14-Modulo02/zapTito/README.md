@@ -46,5 +46,5 @@ dotnet add package Microsoft.ApplicationInsights.AspNetCore
 dotnet add package BCrypt.Net-Next     
     
 ### Listar pacotes desatualizados usando Visual Studio Code (Terminal)       
-dotnet list package --outdated    
+dotnet list package --outdated     
    
