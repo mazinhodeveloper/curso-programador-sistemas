@@ -1,6 +1,6 @@
-> Aula 14 / Módulo 02    
+> Aula 15 / Módulo 02    
 > Docente: Nerildo Viana da Silva       
-> Data: 18/03/2026      
+> Data: 19/03/2026      
 
 # Programador de Sistemas  
 Período: 02/02/2026 a 27/04/2026    

@@ -47,4 +47,22 @@ dotnet add package BCrypt.Net-Next
     
 ### Listar pacotes desatualizados usando Visual Studio Code (Terminal)       
 dotnet list package --outdated    
+
+##### URL Example (Terminal)     
+https://localhost:XXXX/swagger     
    
+##### Json (Cadastro)    
+https://localhost:7191/swagger/index.html     
+{     
+  "nome": "Edmar",    
+  "dataNascimento": "1988-06-27",    
+  "numeroTelefone": "5511948006909",    
+  "senha": "MangaComLeite"    
+},       
+{     
+  "nome": "Roberto",    
+  "dataNascimento": "1988-06-25",    
+  "numeroTelefone": "5511999800910",    
+  "senha": "MangaELeite"    
+}     
+     

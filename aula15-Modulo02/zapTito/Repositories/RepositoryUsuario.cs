@@ -44,5 +44,41 @@ namespace zapTito.Repositories
 
             }
         }
+
+        // URL Example: https://localhost:XXXX/swagger
+        public async Task<Usuario?> GetUsuarioByTelefoneAsync(string telefone)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                // Buscar o usuário pelo número do telefone 
+                // SELECT numeroTelefone, nome, senha OU * FROM 
+                var query = @"
+                    SELECT numeroTelefone FROM dbo.ztUSUARIO WHERE numeroTelefone = @numeroTelefone 
+                "; 
+
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@numeroTelefone", telefone); 
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        /* mm 
+                        var numeroTelefone = reader["numeroTelefone"].ToString() ?? string.Empty;
+
+                        return numeroTelefone; 
+                        */
+                        return new Usuario
+                        {
+                            idUsuario = (int)reader["idUsuario"], 
+                            numeroTelefone = reader["numeroTelefone"].ToString() ?? string.Empty
+                        }; 
+                    }
+                }
+            }
+            // Se não encontrar ninguém 
+            return null;
+        } 
     }
 }

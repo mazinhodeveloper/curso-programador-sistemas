@@ -1,25 +1,27 @@
+using zapTito.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Adicionar suporte a Controllers 
+builder.Services.AddControllers(); 
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
+// Configura Swagger 
+builder.Services.AddEndpointsApiExplorer(); 
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+// Registra o Repositório (Injeção de Dependência) 
+builder.Services.AddScoped<RepositoryUsuario>(); 
 
-// Configure the HTTP request pipeline.
+var app = builder.Build(); 
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    app.UseSwaggerUI(); 
+} 
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
+app.UseHttpsRedirection(); 
+app.UseAuthentication(); 
 app.MapControllers();
 
-app.Run();
+app.Run(); 
