@@ -1,0 +1,45 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / Rider IDE files
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docview
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Published output
+publish/
+out/
+
+# NuGet packages (restored automatically)
+*.nupkg
+packages/
+.nuget/
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets (NEVER commit these)
+appsettings.Development.json
+appsettings.Local.json
+*.env
+secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$*
