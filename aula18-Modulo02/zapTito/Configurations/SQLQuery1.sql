@@ -1,0 +1,16 @@
+USE dbZapTito; 
+GO 
+
+SELECT * FROM dbo.ztACL;
+GO 
+
+SELECT * FROM dbo.ztSTATUS;
+GO 
+
+SELECT * FROM dbo.ztPERFIL;
+GO 
+
+SELECT * FROM dbo.ztUSUARIO;
+GO 
+
+
