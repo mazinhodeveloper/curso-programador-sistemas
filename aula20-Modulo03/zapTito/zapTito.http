@@ -1,0 +1,6 @@
+@zapTito_HostAddress = http://localhost:5163
+
+GET {{zapTito_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
