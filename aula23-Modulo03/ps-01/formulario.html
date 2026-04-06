@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <hr>
+    <form action="envio.html" method="post">
+        <p>
+            Nome: 
+            <input type="text" name="nome" id="nome" class="input-text" required>
+        </p>
+        <p>
+            Email: 
+            <input type="email" name="email" id="email" class="input-text" required>
+        </p>
+        <!-- Acima forma de formulário Amador --> 
+        <!-- Forma correta de formulário --> 
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="input-text" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+</html>
