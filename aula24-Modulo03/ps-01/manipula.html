@@ -5,9 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipula</title>
+    <style>
+        /* TAG */
+        main {
+            background: #f00;
+        }
+        /* CLASS */
+        .caixas {
+            /* Cor de funco */
+            background: #00f;  
+            color: #29c07a; /* Cor d Fonte */
+            width: 200px; /* Largura */
+            height: 200px; /* Altura */
+        }
+        /* ID */
+        #caixa1 {
+            float: left;
+            position: absolute;
+            z-index: 3;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+        }
+        #caixa2 {
+            float: left;
+            background: #29c07a;
+            color: #fff;
+            margin: 20px;
+            margin-top: 5px;
+            margin-right: 35px;
+            margin-bottom: 55px;
+            margin-left: 10px;
+            border: 5px solid #f00;
+            border-radius: 50%;
+            border-top-left-radius: 30%;
+            padding: 40px;
+            width: 110px; /* Largura */
+            height: 110px; /* Altura */
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #caixa3 {
+            float: left;
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <!-- Estilo aplicado direto na tag -->
+    <main style="background: rgb(255, 150, 10);">
         <div id="caixa1" class="caixas">
             <p>Caixa1</p>
         </div>
