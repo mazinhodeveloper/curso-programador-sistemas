@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <hr>
+    <form action="envio.html" method="post">
+        <p>
+            Nome: 
+            <input type="text" name="nome" id="nome" class="input-text" required>
+        </p>
+        <p>
+            Email: 
+            <input type="email" name="email" id="email" class="input-text" required>
+        </p>
+        <!-- Acima forma de formulário Amador --> 
+        <!-- Forma correta de formulário --> 
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="input-text" required>
+        </p>
+        <hr>
+        <p>
+            <label for="mensagem">Sua mensagem</label> <br>
+            <textarea name="mensagem" id="mensagem" rows="10" cols="30" class="textarea-text">Texto padrão.</textarea>
+        </p>
+        <hr>
+        <p>
+            <label for="estados">UF:</label> 
+            <select name="estados" id="estados">
+                <option value="am">AM</option>
+                <option value="sp" selected>SP</option>
+                <option value="rj">RJ</option>
+            </select>
+        </p>
+        <hr>
+        <p>
+            <h2>Selecione suas preferencias</h2>
+            <label for="terror">Terror</label>
+            <input type="checkbox" name="terror" id="terror" class="chk-item" value="terror" required> 
+            <label for="comedia">Comedia</label>
+            <input type="checkbox" name="comedia" id="comedia" class="chk-item" value="comedia">
+        </p>
+        <hr>
+        <p>
+            <h2>Selecione um periodo</h2>
+            <input type="radio" name="periodo" id="periodo" value="manha"><label for="periodo">manha</label> 
+            <input type="radio" name="periodo" id="periodo2" value="tarde"><label for="periodo">tarde</label> 
+            <input type="radio" name="periodo" id="periodo3" value="noite"><label for="periodo">noite</label>
+        </p>
+        <hr>
+        <p>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" min="14" max="60">
+        </p>
+        <hr>
+        <p>
+            <label for="cor">Sua cor favorita</label>
+            <input type="color" name="cor" id="cor">
+        </p>
+        <hr>
+        <p>
+            <label for="dataNascimento">Data de nascimento</label>
+            <input type="date" name="dataNascimento" id="dataNascimento" required>
+        </p>
+        <hr>
+        <p>
+            <label for="mercado">Lista de compras</label><br>
+            <select name="mercado" id="mercado" size="4" style="width:100px;">
+                <option value="arroz">arroz</option>
+                <option value="feijão">feijão</option>
+                <option value="açucar">açucar</option>
+                <option value="sabão">sabão</option>
+            </select>
+        </p>
+        <hr>
+        <p>
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
