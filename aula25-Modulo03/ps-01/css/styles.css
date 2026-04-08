@@ -1,0 +1,10 @@
+:root {
+    --primary: #544188;
+    --success: #22BE8D;
+    --bg-light: #EDEBF4;
+    --neutral: #CDCDCD;
+}
+.btn-primary { background: var(--primary); border: none; }
+.btn-success { background: var(--success); }
+.chat-bubble { background: #FFF; border-radius: 18px; padding: 12px 16px; max-width: 70%; margin: 8px 0; }
+

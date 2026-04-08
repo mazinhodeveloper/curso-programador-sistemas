@@ -1,0 +1,57 @@
+<!-- http://localhost/ps-01/responsive.html --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        /* codigo para responsivo */ 
+        /* primeiro todo o codigo global */ 
+        /* segundo seguir da menor tela para a maior */ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* tela de celular */
+        @media screen and (min-width:100px) and (max-width:600px) {
+            body {
+                background: #f00;
+                color: #000;
+            }
+        }
+
+        /* tela de tablet */
+        @media screen and (min-width:600px) and (max-width:1200px) {
+            body {
+                background: #0ff;
+                color: #000;
+            }
+        }
+
+        /* tela de notebook */
+        @media screen and (min-width:1200px) and (max-width:1900px) {
+            body {
+                background: #0f0;
+                color: #000;
+            }
+        }
+
+        /* tela de desktop */
+        @media screen and (min-width:1900px) {
+            body {
+                background: #083392;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Responsive</h1>
+    </main>
+</body>
+</html>
