@@ -1,0 +1,172 @@
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+
+
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+  <style>
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(216, 100%, 4%) 15%,  
+          hsl(211, 100%, 12%) 35%,
+          hsl(209, 100%, 20%) 75%,
+          hsl(46, 40%, 20%) 10%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+  </style>
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start " >
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-7 mb-5 mb-lg-0" style="z-index: 10; background-color: hsl(0, 5%, 96%); border-radius: 6px;">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          <span style="color: #001D3D">RotaKids School</span>
+        </h1>
+        <p class="mb-4">
+          Somos uma plataforma dedicada a facilitar a conexão entre pais, responsáveis e profissionais de transporte escolar. Nosso objetivo é oferecer um serviço seguro, confiável e prático, garantindo tranquilidade para as famílias e eficiência para os transportadores.
+        </p>
+        <p class="mb-4">
+          Acreditamos que o transporte escolar vai além de levar e buscar alunos — ele envolve cuidado, responsabilidade e confiança. Por isso, reunimos em um só lugar motoristas qualificados, avaliações de usuários e informações detalhadas, ajudando você a tomar a melhor decisão.
+        </p>
+        <p class="mb-4">
+          Nossa missão é modernizar o acesso ao transporte escolar, promovendo mais transparência, segurança e comodidade no dia a dia.
+        </p>
+      </div>
+
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <div class="card bg-glass">
+          <div class="card-body px-4 px-md-5">
+            <!-- LOGO -->
+            <div class="form-check d-flex justify-content-center mb-4">  
+              <div class="text-center mb-3">
+                  <img src="~/images/logo.png" width="80" />
+                  <h4>RKS Login</h4>
+              </div>
+            </div>
+
+            <form method="post" asp-controller="Account" asp-action="Login">
+                <input name="cpf" class="form-control mb-2" placeholder="CPF" />
+                <input name="senha" type="password" class="form-control mb-3" placeholder="Senha" />
+
+                <button type="submit" class="btn btn-warning w-100 mb-3">Entrar</button>
+            </form>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="text-danger mt-2">@ViewBag.Error</div>
+            }
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Cadastre-se</p>
+              <p>Recuperar senha</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+<!-- Section: Second Block --> 
+<section class="overflow-hidden">
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start ">
+    <div class="row gx-lg-5">
+      <div class="col-lg-4">
+        <h2 class="my-5 fw-bold ls-tight">
+          <span style="color: #003566">O que é?</span>
+        </h2>
+        <p class="mb-4">
+          Um aplicativo com o objetivo de melhorar a organização e a segurança no transporte escolar, auxiliando tanto o transportador quanto os responsáveis pelas crianças. O sistema permite gerenciar pagamentos, presença dos alunos e localização do transporte.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h3 class="my-5 fw-bold ls-tight">
+          <span style="color: #003566">Funcionalidades</span>
+        </h3>
+        <p class="mb-4">
+          O aplicativo terá controle de acesso, onde cada pessoa cadastrada possuirá um perfil e um status dentro do sistema. O transportador poderá realizar o registro de novos clientes, cadastrar alunos e, como função principal, terá uma lista de chamada para registrar se a criança foi ou não no transporte. 
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h3 class="my-5 fw-bold ls-tight">
+          <span style="color: #003566">Público alvo</span>
+        </h3>
+        <p class="mb-4">
+          Para os responsáveis de cada criança, haverá recursos exclusivos. Cada responsável terá uma área voltada para sua criança, onde será possível acompanhar em tempo real o caminho que o transporte está realizando. Além disso, o sistema mostrará a estimativa de chegada do transporte, bem como o acesso à placa, cor e modelo da van, e ao nome do transportador. Também será possível escolher a forma de pagamento, podendo ser via Pix, boleto ou cartão.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- 
+<div class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card p-4 card-custom" style="width: 350px;">
+        <div class="text-center mb-3">
+            <img src="~/images/logo.png" width="80" />
+            <h4>RKS Login</h4>
+        </div>
+
+        <form method="post" asp-controller="Account" asp-action="Login">
+            <input name="cpf" class="form-control mb-2" placeholder="CPF" />
+            <input name="senha" type="password" class="form-control mb-3" placeholder="Senha" />
+
+            <button type="submit" class="btn btn-warning w-100">Entrar</button>
+        </form>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="text-danger mt-2">@ViewBag.Error</div>
+        }
+    </div>
+
+</div>
+-->
+
+<!--
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card p-4 card-custom" style="width: 350px;">
+        <div class="text-center mb-3">
+            <img src="~/images/logo.png" width="80" />
+            <h4>RKS Login</h4>
+        </div>
+
+        <form>
+            <input type="text" class="form-control mb-2" placeholder="CPF" />
+            <input type="password" class="form-control mb-3" placeholder="Senha" />
+
+            <button class="btn btn-warning w-100">Entrar</button>
+        </form>
+    </div>
+
+</div>
+-->
+
+
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

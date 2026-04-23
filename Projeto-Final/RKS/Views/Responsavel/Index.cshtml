@@ -1,0 +1,139 @@
+@{
+    ViewData["Title"] = "Responsáveis";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="fw-bold">RESPONSÁVEIS</h2>
+
+        <div class="container mt-4">
+
+            <!-- Filtros -->
+            <div class="row g-3 mb-4">
+
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Escola</label>
+                    <select class="form-select form-select-sm rounded-pill bg-light">
+                        <option selected>Selecione</option>
+                        <option>EMEI CEU PAZ</option>
+                        <option>EMEF Exemplo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Turma</label>
+                    <select class="form-select form-select-sm rounded-pill bg-light">
+                        <option selected>Selecione</option>
+                        <option>Turma A</option>
+                        <option>Turma B</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-end">
+                    <button class="btn btn-primary rounded-pill w-100">
+                        <i class="bi bi-search me-1"></i> Buscar
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Tabela -->
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-header text-white" style="background-color:#0b2d4d;">
+                    <div class="row fw-bold text-center">
+                        <div class="col-md-3">Educando</div>
+                        <div class="col-md-3">Responsável</div>
+                        <div class="col-md-2">Parentesco</div>
+                        <div class="col-md-2">Telefone</div>
+                        <div class="col-md-2">Ações</div>
+                    </div>
+                </div>
+
+                <div class="card-body p-0">
+
+                    <!-- Linha 1 -->
+                    <div class="row align-items-center text-center g-0 border-bottom py-2 bg-light">
+                        <div class="col-md-3 text-start px-2 fw-semibold">
+                            Alice Souza
+                        </div>
+                        <div class="col-md-3">
+                            Maria Souza
+                        </div>
+                        <div class="col-md-2">
+                            Mãe
+                        </div>
+                        <div class="col-md-2">
+                            (11) 99999-1111
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Linha 2 -->
+                    <div class="row align-items-center text-center g-0 border-bottom py-2">
+                        <div class="col-md-3 text-start px-2 fw-semibold">
+                            Bruno Santos
+                        </div>
+                        <div class="col-md-3">
+                            João Santos
+                        </div>
+                        <div class="col-md-2">
+                            Pai
+                        </div>
+                        <div class="col-md-2">
+                            (11) 98888-2222
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Linha 3 -->
+                    <div class="row align-items-center text-center g-0 py-2 bg-light">
+                        <div class="col-md-3 text-start px-2 fw-semibold">
+                            Carla Oliveira
+                        </div>
+                        <div class="col-md-3">
+                            Fernanda Oliveira
+                        </div>
+                        <div class="col-md-2">
+                            Responsável
+                        </div>
+                        <div class="col-md-2">
+                            (11) 97777-3333
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botão adicionar -->
+            <div class="text-end mt-3">
+                <button class="btn btn-success rounded-pill px-4">
+                    <i class="bi bi-plus-circle me-1"></i> Novo Responsável
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+@{
+    ViewData["Title"] = "Dashboard Inicial";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">Bem-vindo ao Dashboard</h1>
+        
+        <div class="alert alert-info">
+            <strong>Status:</strong> Aplicação MVC + API rodando com Docker
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><i class="bi bi-shield-lock me-2"></i> Gerenciar ACL</h5>
+                        <p class="card-text">Cadastre, edite e delete permissões</p>
+                        <a href="/acl" class="btn btn-primary">Ir para ACL <i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><i class="bi bi-person-circle me-2"></i> Gerenciar PERFIL</h5>
+                        <p class="card-text">Cadastre, edite e delete permissões</p>
+                        <a href="/perfil" class="btn btn-primary">Ir para PERFIL <i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><i class="bi bi-toggle-on me-2"></i> Gerenciar STATUS</h5>
+                        <p class="card-text">Cadastre, edite e delete permissões</p>
+                        <a href="/status" class="btn btn-primary">Ir para STATUS <i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><i class="bi bi-file-code me-2"></i> Swagger API</h5>
+                        <p class="card-text">Documentação da API</p>
+                        <a href="/swagger" class="btn btn-secondary" target="_blank">Abrir Swagger</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5><i class="bi bi-tools me-2"></i> Módulos Opções</h5>
+                        <span class="btn btn-sm btn-outline-dark me-2">
+                            <i class="bi bi-eye"></i>
+                        </span>
+                        <span class="btn btn-sm btn-outline-success me-2">
+                            <i class="bi bi-plus-circle"></i>
+                        </span>
+                        <span class="btn btn-sm btn-outline-primary me-2">
+                            <i class="bi bi-pencil"></i>
+                        </span>
+                        <span class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5><i class="bi bi-code-slash me-2"></i> API / Desenvolvimento</h5>
+                        <!-- 
+                        <a href="/api/aclapi" target="_blank">All IDs</a> | 
+                        <a href="/api/aclapi/2" target="_blank">Specific ID</a> | 
+                        -->
+                        <!-- 
+                        <a href="/swagger" target="_blank">Swagger</a> |
+                        <a href="/health" target="_blank">Health</a> |
+                        <a href="/hello/You" target="_blank">API Test</a> 
+                        <br> 
+                        -->
+                        <a href="/swagger" target="_blank" class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="bi bi-journal-code"></i> Swagger
+                        </a>
+
+                        <a href="/health" target="_blank" class="btn btn-sm btn-outline-success me-2">
+                            <i class="bi bi-heart-pulse"></i> Health
+                        </a>
+
+                        <a href="/hello/You" target="_blank" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-play-circle"></i> Test
+                        </a>
+                        <!-- |
+                        <a href="/hello/World" target="_blank">API Test 2</a> |
+                        <a href="/ping" target="_blank">Ping - Hot Reload Working!</a> -->
+                    </div>
+                </div>
+            </div>
+
+<!--
+        <div class="row">
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h2>✅ Static Files Work!</h2>
+                        <a href="/" target="_blank">Home</a> | 
+                        <a href="/acl" target="_blank">ACL ALL</a> | 
+                        <a href="/acl/details/4" target="_blank">ACL Details ID 4</a> | 
+                        <a href="/api/aclapi" target="_blank">ERROR 404</a> | 
+                        <h2>✅ API</h2>
+                        <a href="/api/aclapi" target="_blank">All IDs</a> | 
+                        <a href="/api/aclapi/2" target="_blank">Specific ID</a> | 
+                        <a href="/swagger" target="_blank">Swagger</a> |
+                        <a href="/health" target="_blank">Health</a> |
+                        <a href="/hello/You" target="_blank">API Test</a> |
+                        <a href="/hello/World" target="_blank">API Test 2</a> |
+                        <a href="/ping" target="_blank">Ping - Hot Reload Working!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h2>✅ Static Files Work!</h2>
+                        <a href="/" target="_blank">Home</a> | 
+                        <a href="/acl" target="_blank">ACL ALL</a> | 
+                        <a href="/acl/details/4" target="_blank">ACL Details ID 4</a> | 
+                        <a href="/api/aclapi" target="_blank">ERROR 404</a> | 
+                        <h2>✅ API</h2>
+                        <a href="/api/aclapi" target="_blank">All IDs</a> | 
+                        <a href="/api/aclapi/2" target="_blank">Specific ID</a> | 
+                        <a href="/swagger" target="_blank">Swagger</a> |
+                        <a href="/health" target="_blank">Health</a> |
+                        <a href="/hello/You" target="_blank">API Test</a> |
+                        <a href="/hello/World" target="_blank">API Test 2</a> |
+                        <a href="/ping" target="_blank">Ping - Hot Reload Working!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+-->        
+        
+    </div>
+</div>

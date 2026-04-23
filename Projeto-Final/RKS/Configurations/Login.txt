@@ -1,0 +1,18 @@
+RKS - Projeto Final: 
+.Net 8.0 e SQL Server 
+
+1. Instalar o Banco de dados: 
+RKS/Configurations/DBConfigurations/TransporteEscolar-2026-04-20.sql 
+
+2. Instalar os dados do banco de dados: 
+RKS/Configurations/DBConfigurationsTransporteEscolar-Dados-2026-04-20.sql 
+
+3. Usando o Terminal/Git Bash: 
+dotnet run
+
+4. URL: 
+http://localhost:xxxx
+
+RKS Login 
+CPF: admin
+Senha: 123

@@ -1,0 +1,15 @@
+@model API.Data.Models.ACL
+
+<h2>Delete ACL</h2>
+
+<p>Tem certeza que deseja deletar?</p>
+
+<strong>@Model.tipo - @Model.descricao</strong>
+
+<form method="post" action="/acl/deleteconfirmed">
+    <input type="hidden" name="id" value="@Model.idACL" />
+    <button type="submit">Sim, deletar</button>
+</form>
+
+<br />
+<a href="/acl">Cancelar</a>

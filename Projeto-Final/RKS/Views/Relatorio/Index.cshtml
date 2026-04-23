@@ -1,0 +1,124 @@
+@{
+    ViewData["Title"] = "Relatório";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="fw-bold">RELATÓRIO</h2>
+
+        <div class="row">
+                    
+            <div class="container mt-4">
+
+    <!-- Título -->
+    <div class="text-center mb-4">
+        <h4><i class="bi bi-file-earmark-text me-2"></i> Gerar Relatório</h4>
+    </div>
+
+    <!-- Filtros -->
+    <div class="row g-3 mb-4 justify-content-center">
+
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Escola</label>
+            <select class="form-select form-select-sm rounded-pill bg-light">
+                <option selected>Selecione</option>
+                <option>Escola A</option>
+                <option>Escola B</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Turma</label>
+            <select class="form-select form-select-sm rounded-pill bg-light">
+                <option selected>Selecione</option>
+                <option>Turma 1</option>
+                <option>Turma 2</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Turno</label>
+            <select class="form-select form-select-sm rounded-pill bg-light">
+                <option selected>Selecione</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Card do Relatório -->
+    <div class="card border-light shadow-sm">
+        <div class="card-body">
+
+            <!-- Cabeçalho do relatório -->
+            <div class="text-center mb-3">
+                <small class="text-muted d-block">
+                    Ficha de Frequência dos Alunos
+                </small>
+                <strong>DRE Freguesia / Brasilândia - 2025</strong>
+            </div>
+
+            <!-- Infos -->
+            <div class="row mb-3 small">
+                <div class="col-md-6">
+                    <strong>Escola:</strong> EMEF Exemplo <br>
+                    <strong>Turma:</strong> 5º Ano A
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <strong>Mês:</strong> Dez/25 <br>
+                    <strong>Turno:</strong> Integral
+                </div>
+            </div>
+
+            <!-- Tabela -->
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm text-center align-middle">
+                    
+                    <thead class="table-light">
+                        <tr>
+                            <th>Nome</th>
+                            <!-- Dias -->
+                            <!-- 1 ao 10 exemplo -->
+                            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="text-start">Alice Souza</td>
+                            <td>P</td><td>P</td><td>F</td><td>P</td><td>P</td>
+                            <td>/</td><td>/</td><td>/</td><td>/</td><td>/</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start">Bruno Santos</td>
+                            <td>P</td><td>P</td><td>P</td><td>P</td><td>P</td>
+                            <td>/</td><td>/</td><td>/</td><td>/</td><td>/</td>
+                        </tr>
+                        <tr>
+                            <td class="text-start">Carla Oliveira</td>
+                            <td>F</td><td>P</td><td>P</td><td>P</td><td>P</td>
+                            <td>/</td><td>/</td><td>/</td><td>/</td><td>/</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <!-- Botão Exportar -->
+            <div class="text-end mt-3">
+                <button class="btn btn-outline-secondary rounded-pill px-4">
+                    <i class="bi bi-download me-1"></i> Exportar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+        </div>
+        
+    </div>
+</div>

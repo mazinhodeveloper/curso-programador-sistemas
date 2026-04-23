@@ -1,0 +1,15 @@
+@model API.Data.Models.PERFIL
+
+<h2>Delete PERFIL</h2>
+
+<p>Tem certeza que deseja deletar?</p>
+
+<strong>@Model.tipo - @Model.descricao</strong>
+
+<form method="post" action="/perfil/deleteconfirmed">
+    <input type="hidden" name="id" value="@Model.idPerfil" />
+    <button type="submit">Sim, deletar</button>
+</form>
+
+<br />
+<a href="/perfil">Cancelar</a>

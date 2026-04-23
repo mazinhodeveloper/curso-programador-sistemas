@@ -1,0 +1,160 @@
+@{
+    ViewData["Title"] = "Alunos";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="fw-bold">ALUNOS</h2>
+
+        <div class="container mt-4">
+
+            <!-- Filtros -->
+            <div class="row g-3 mb-4">
+
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Escola</label>
+                    <select class="form-select form-select-sm rounded-pill bg-light">
+                        <option selected>Selecione</option>
+                        <option>EMEI CEU PAZ</option>
+                        <option>EMEF Exemplo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Turma</label>
+                    <select class="form-select form-select-sm rounded-pill bg-light">
+                        <option selected>Selecione</option>
+                        <option>Turma A</option>
+                        <option>Turma B</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Status</label>
+                    <select class="form-select form-select-sm rounded-pill bg-light">
+                        <option selected>Todos</option>
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-end">
+                    <button class="btn btn-primary rounded-pill w-100">
+                        <i class="bi bi-search me-1"></i> Buscar
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Lista de alunos -->
+            <div class="card border-0 shadow-sm">
+
+                <!-- Cabeçalho -->
+                <div class="card-header text-white" style="background-color:#0b2d4d;">
+                    <div class="row fw-bold text-center">
+                        <div class="col-md-1">Nº</div>
+                        <div class="col-md-4 text-start">Nome</div>
+                        <div class="col-md-2">Turma</div>
+                        <div class="col-md-2">Turno</div>
+                        <div class="col-md-1">Status</div>
+                        <div class="col-md-2">Ações</div>
+                    </div>
+                </div>
+
+                <!-- Corpo -->
+                <div class="card-body p-0">
+
+                    <!-- Aluno 1 -->
+                    <div class="row align-items-center text-center g-0 border-bottom py-2 bg-light">
+                        <div class="col-md-1">
+                            <span class="badge bg-secondary rounded-pill">1</span>
+                        </div>
+                        <div class="col-md-4 text-start px-2 fw-semibold">
+                            Alice Souza
+                        </div>
+                        <div class="col-md-2">
+                            5º Ano A
+                        </div>
+                        <div class="col-md-2">
+                            Manhã
+                        </div>
+                        <div class="col-md-1">
+                            <span class="badge bg-success">Ativo</span>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Aluno 2 -->
+                    <div class="row align-items-center text-center g-0 border-bottom py-2">
+                        <div class="col-md-1">
+                            <span class="badge bg-secondary rounded-pill">2</span>
+                        </div>
+                        <div class="col-md-4 text-start px-2 fw-semibold">
+                            Bruno Santos
+                        </div>
+                        <div class="col-md-2">
+                            5º Ano A
+                        </div>
+                        <div class="col-md-2">
+                            Tarde
+                        </div>
+                        <div class="col-md-1">
+                            <span class="badge bg-success">Ativo</span>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Aluno 3 -->
+                    <div class="row align-items-center text-center g-0 py-2 bg-light">
+                        <div class="col-md-1">
+                            <span class="badge bg-secondary rounded-pill">3</span>
+                        </div>
+                        <div class="col-md-4 text-start px-2 fw-semibold">
+                            Carla Oliveira
+                        </div>
+                        <div class="col-md-2">
+                            5º Ano B
+                        </div>
+                        <div class="col-md-2">
+                            Integral
+                        </div>
+                        <div class="col-md-1">
+                            <span class="badge bg-secondary">Inativo</span>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botão novo -->
+            <div class="text-end mt-3">
+                <button class="btn btn-success rounded-pill px-4">
+                    <i class="bi bi-plus-circle me-1"></i> Novo Aluno
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

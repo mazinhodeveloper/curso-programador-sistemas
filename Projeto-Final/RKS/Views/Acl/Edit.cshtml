@@ -1,0 +1,15 @@
+@model API.Data.Models.ACL
+
+<h2>Edit ACL</h2>
+
+<form method="post">
+    <input type="hidden" name="idACL" value="@Model.idACL" />
+
+    <label>Tipo</label><br />
+    <input type="text" name="tipo" value="@Model.tipo" /><br /><br />
+
+    <label>Descricao</label><br />
+    <input type="text" name="descricao" value="@Model.descricao" /><br /><br />
+
+    <button type="submit">Atualizar</button>
+</form>

@@ -1,0 +1,41 @@
+:root {
+    --primary: #001d3d;
+    --secondary: #003566;
+    --accent: #ffc300;
+    --dark: #000814;
+    --light: #ffffff;
+}
+
+/* Navbar */
+.bg-primary-custom {
+    background-color: var(--primary);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+.sidebar .nav-link {
+    color: var(--light);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--accent);
+    color: #000;
+}
+
+/* Content */
+.content {
+    background-color: #f5f7fa;
+}
+
+/* Cards */
+.card-custom {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

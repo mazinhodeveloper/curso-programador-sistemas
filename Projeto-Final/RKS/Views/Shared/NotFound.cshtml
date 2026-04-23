@@ -1,0 +1,32 @@
+@model string
+
+@{
+    ViewData["Title"] = "Página Não Encontrada (404)";
+}
+
+<div style="display: flex; justify-content: center; align-items: center; min-height: 80vh; font-family: Arial, sans-serif;">
+    <div style="text-align: center; border: 2px dashed #ccc; padding: 40px; border-radius: 10px; background-color: #f9f9f9;">
+        
+        <div style="font-size: 60px; margin-bottom: 20px;">🔍</div>
+
+        <h1 style="color: #d9534f;">Página Não Encontrada</h1>
+        
+        <p style="font-size: 18px; color: #555;">
+            A URL que você tentou acessar não existe ou foi movida.
+        </p>
+
+        @* This shows the exact wrong URL the user typed *@
+        <p style="font-size: 14px; color: #999; background: #eee; padding: 10px; border-radius: 5px; display: inline-block; margin-top: 10px;">
+            <strong>Rota acessada:</strong> @Model
+        </p>
+
+        <div style="margin-top: 30px;">
+            <a href="/" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+                🏠 Ir para Home
+            </a>
+            <button onclick="history.back()" style="padding: 10px 20px; background-color: #6c757d; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                ← Voltar
+            </button>
+        </div>
+    </div>
+</div>
