@@ -1,0 +1,5 @@
+USE dbZapTito; 
+GO 
+
+SELECT * FROM ztUSUARIO; 
+GO 
