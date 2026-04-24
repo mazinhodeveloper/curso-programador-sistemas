@@ -1,0 +1,466 @@
+<!-- display.html --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <main>
+        <h1>Display Flex</h1>
+        <section>
+            <h2>Display para PAI (é passado como herança aos elementos dentro dele).</h2>
+            <article>
+                <h3>Propriedades para flex-box</h3>
+                <ul>
+                    <li>flex-direction</li>
+                    <li>flex-wrap</li>
+                    <li>justify-content</li>
+                    <li>align-items</li>
+                    <li>align-content</li>
+                </ul>
+                <hr>
+                <div class="flex-container">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <style>
+                    .flex-container {
+                        background-color: #f0f;
+                        /* criando a disposição FLEX */
+                        display: flex;
+                    }
+                    .flex-container>div {
+                        background-color: #fff;
+                        margin: 10px;
+                        padding: 20px;
+                        font-size: 26px;
+                    }
+                </style>
+                <hr>
+                <h3>Flex-direction</h3>
+                <p>A propriedade define que a direção do contêiner que empilha os itens flex.</p>
+                <p>Seus valores:</p>
+                <ul>
+                    <li>
+                        <b>column</b>: 
+                        empilha os itens flexíveis verticalmente (de cima para baixo).
+                    </li>
+                    <li>
+                        <b>column-reverse</b>: 
+                        empilha os itens flexíveis verticalmente invertendo sua ordem (de baixo para cima).
+                    </li>
+                    <li>
+                        <b>row</b>: 
+                        empilhad os itens flexíveis horizontalmente  (da esquerda para direita) - <strong>PADRÃO</strong>.
+                    </li>
+                    <li>
+                        <b>row-reverse</b>: 
+                        empilha os itens flexíveis horizontalmente invertendo sua ordem (da direita para esquerda).
+                    </li>
+                </ul>
+                <style>
+                    .flex-container {
+                        flex-direction: column;
+                        flex-direction: row-reverse;
+                        flex-direction: column-reverse;
+                        flex-direction: row;
+                    }
+                </style>
+                <hr>
+                <h3>Flex-wrap</h3>
+                <p>A propriedade especifica se os itens flexíveis devem ser ou não de acordo com o viewport.</p>
+                <p>Seus valores são:</p>
+                <ul>
+                    <li>
+                        <b>wrap</b>: 
+                        especifica que os itens flexíveis serão enrolados, se necessario.
+                    </li>
+                    <li>
+                        <b>nowrap</b>: 
+                        especifica que os itens flexíveis não serão enrolados - <strong>PADRÃO</strong>.
+                    </li>
+                    <li>
+                        <b>wrap-reverse</b>: 
+                        especifica que os itens flexíveis irão enrolar se necessários e na ordem inversa.
+                    </li>
+                </ul>
+                <div class="flex-wrap">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                    <div>04</div>
+                    <div>05</div>
+                    <div>06</div>
+                    <div>07</div>
+                    <div>08</div>
+                    <div>09</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                 </div>
+                <style>
+                    .flex-wrap {
+                        background-color: #0f0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-wrap: wrap-reverse;
+                        flex-wrap: wrap;
+                    }
+                    .flex-wrap>div{
+                        background-color: #fff;
+                        width: 100px;
+                        height: 100px;
+                        margin: 10px;
+                        font-size: 26px;
+                        border: 3px solid #000;
+                        border-radius: 50%;
+                        text-align: center;
+                    }
+                </style>
+
+                <hr>
+                <h3>Flex-flow</h3>
+                <p>A propriedade é uma junção entre o <b>flex-direction</b> e o <b>flex-wrap</b>.</p>
+                <p>Para visualizar, basta usar o exemplo anterior inserindo o <b><i>flex-flow: row wrap</i></b>, no lugar do flex-wrap.</p>
+
+                <div class="flex-wrap flow">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                    <div>04</div>
+                    <div>05</div>
+                    <div>06</div>
+                    <div>07</div>
+                    <div>08</div>
+                    <div>09</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+                <style>
+                    .flow {
+                        flex-flow: row-reverse wrap;
+                    }
+                </style>
+
+                <hr>
+                <h3>Justify-content</h3>
+                <p>A propriedade é usada para alinhas os itens flexíveis de forma horizontal.</p>
+                <p>Seus valores são:</p>
+                <ul>
+                    <li>
+                        <b>center</b>: 
+                        Os valores de alinhamento flexíveis no centro do contêiner.
+                    </li>
+                    <li>
+                        <b>flex-start</b>: 
+                        Os valores de alinhamento flexíveis no início do contêiner - <strong>PADRÃO</strong>.
+                    </li>
+                    <li>
+                        <b>flex-end</b>: 
+                        Os valores de alinhamento flexíveis no final do contêiner.
+                    </li>
+                    <li>
+                        <b>space-around</b>: 
+                        Os valores de alinhamento flexíveis com espaço antes, entre e depois.  
+                    </li>
+                    <li>
+                        <b>space-between</b>: 
+                        Os valores de alinhamento flexíveis com espaço entre os objetos flexíveis.
+                    </li>
+                </ul>
+                <div class="justify-content">
+                    <div class="item-1">Item 1</div>
+                    <div class="item-2">Item 2</div>
+                    <div class="item-3">Item 3</div>
+                </div>
+                <style>
+                    .justify-content {
+                        background-color: #f00; 
+                        display: flex;
+                        justify-content: center;
+                        justify-content: flex-start;
+                        justify-content: flex-end;
+                        justify-content: space-around;
+                        justify-content: space-between;
+                    }
+                    .justify-content>div {
+                        background-color: #fff; 
+                        width: 100px; 
+                        height: 30px; 
+                        margin: 10px; 
+                        text-align: center; 
+                        font-size: 26px; 
+                        line-height: 25px;
+                    }
+                    /* Ordenar os filhos */
+                    .justify-content .item-1 { order: 3; } 
+                    .justify-content .item-2 { order: 1; } 
+                    .justify-content .item-3 { order: 2; } 
+                </style>
+
+                <hr>
+                <h3>Align-items</h3> 
+                <p>A propriedade é usada para alinhar os itens flexíveis na vertical.</p>
+                <p>Seus valores são:</p>
+                <ul>
+                    <li>
+                        <b>center</b>: 
+                        O valor alinha os itens flexíveis no meio do contêiner.
+                    </li>
+                    <li>
+                        <b>flex-start</b>: 
+                        O valor alinha os itens flexíveis na parte superior do contêiner. 
+                    </li>
+                    <li>
+                        <b>flex-end</b>: 
+                        O valor alinha os itens flexíveis na parte inferior do contêiner. 
+                    </li>
+                    <li>
+                        <b>stretch</b>: 
+                        O valor estende os itens flexíveis para preencher o contêiner. - <strong>PADRÃO</strong>.
+                    </li>
+                    <li>
+                        <b>baseline</b>: 
+                        O valor alinha os itens flexíveis, com as linhas bases. 
+                    </li>
+                </ul>
+                <div class="align-items">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="align-items-base">
+                    <div><h4>A</h4></div>
+                    <div><small>B</small></div>
+                    <div><h6>C</h6></div>
+                    <div><p>D</p></div>
+                </div>
+                <style>
+                    .align-items, .align-items-base {
+                        background-color: #0f0;
+                        height: 200px;
+                        display: flex;
+                        margin-bottom: 5px;
+                        align-items: center;
+                        align-items: flex-start;
+                        align-items: flex-end;
+                        align-items: stretch;
+                    }
+                    .align-items-base {
+                        align-items: baseline;
+                    } 
+                    .align-items>div, .align-items-base>div {
+                        background-color: #fff;
+                        width: 100px;
+                        margin: 10px;
+                        text-align: center;
+                        font-size: 26px;
+                    }
+                </style>
+
+                <hr>
+                <h3>Align-content</h3>
+                <p>A propriedade é usada para alinhar as linhas flexíveis.</p>
+                <p>Seus valores são:</p>
+                <ul>
+                    <li>
+                        <b>center</b>: 
+                        O valor mostra as linhas flexíveis no meio do contêiner.
+                    </li>
+                    <li>
+                        <b>stretch</b>: 
+                        O valor estica as linhas flexíveis para assumir o contêiner - <strong>PADRÃO</strong>. 
+                    </li>
+                    <li>
+                        <b>flex-start</b>: 
+                        O valor exibe as linhas flexíveis no início do contêiner. 
+                    </li>
+                    <li>
+                        <b>flex-end</b>: 
+                        O valor exibe as linhas flexíveis no final do contêiner. 
+                    </li>
+                    <li>
+                        <b>space-around</b>: 
+                        O valor exibe as linhas flexíveis com espaço antes, entre e depois do contêiner. 
+                    </li>
+                    <li>
+                        <b>space-between</b>: 
+                        O valor exibe as linhas flexíveis com espaço entre eles no contêiner. 
+                    </li>
+                </ul>
+                <p>Neste exemplo, usamos um contêiner com 600px de altura, com o <b>flex-wrap</b>, propriedade definida para wrap, para melhor demostrar o <b>align-content</b>.</p>
+                <div class="align-content">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                    <div>04</div>
+                    <div>05</div>
+                    <div>06</div>
+                    <div>07</div>
+                    <div>08</div>
+                    <div>09</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div class="col-10">12</div>
+                </div>
+                <style>
+                    .align-content {
+                        background-color: #0f0;
+                        height: 600px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        /* Caso necessário cria uma barra de rolagem dentro do contêiner */ 
+                        overflow: scroll;
+                        align-content: center;
+                        align-content: stretch;
+                        align-content: flex-start;
+                        align-content: flex-end;
+                        align-content: space-around;
+                        align-content: space-between;
+                    }
+                    .align-content>div {
+                        background-color: #000;
+                        color: #0f0;
+                        margin: 10px;
+                        width: 100px;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 26px;
+                    }
+                </style>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>TRABALHANDO COM OS ELEMENTOS FILHOS</h2>
+            <article>
+                <hr>
+                <h3>Flex grow</h3>
+                <p>A propriedade especifica o quanto um item flexível crecerá em relação ao resto dos itens flexíveis.</p>
+                <div class="flex-grow-pai">
+                    <div class="col1">Item 1</div>
+                    <div class="col2">Item 2</div>
+                    <div class="col3">Item 3</div>
+                </div>
+                <style>
+                    .flex-grow-pai {
+                        background: #000;
+                        display: flex;
+                        align-items: stretch;
+                    } 
+                    .flex-grow-pai>div {
+                        background: #fff;
+                        color: #0f0;
+                        margin: 10px;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 26px;
+                    }
+                    .flex-grow-pai .col1 {
+                        flex-grow: 1;
+                    }
+                    .flex-grow-pai .col2 {
+                        flex-grow: 12;
+                    }
+                    .flex-grow-pai .col3 {
+                        flex-grow: 8;
+                    }
+                </style>
+                <hr>
+                <h3>Align-self</h3>
+                <p>A propriedade especifica para o alinhamento de item selecionado dentro do contêiner flexível.</p>
+                <p>Está propriedade substitui o alinhamento padrão definido <b>align-items</b>, do contêiner pai.</p>
+                <div class="align-self-pai">
+                    <div>A</div>
+                    <div>B</div>
+                    <div class="align-self">C</div>
+                    <div>D</div>
+                </div>
+                <style>
+                    .align-self-pai {
+                        background: #f00;
+                        height: 200px;
+                        display: flex;
+                    }
+                    .align-self-pai>div {
+                        background: #fff;
+                        color: #f00;
+                        width: 100px;
+                        margin: 10px;
+                        padding: 5px;
+                        text-align: center;
+                        font-size: 26px;
+                    }
+                    .align-self {
+                        align-self: center;
+                    }
+                </style>
+                <p>Os itens utilizados serão os mesmo do PAI:</p>
+                <p>Que são: <b>center</b>, <b>flex-start</b>, <b>flex-end</b>, <b>stretch</b> e <b>baseline</b>.</p>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>Centralizando o objeto meio do navegador</h2>
+            <p>Defina os dois itens <b>justify-content:center;</b> e <b>align-items:center;</b> e terá o objeto filho centralizado em relação ao seu contêiner pai.</p>
+            <div class="alinhamento-perfeito">
+                <div class="alinhamento-perfeito-filho"> &npsp; </div>
+            </div>
+            <style>
+                .alinhamento-perfeito {
+                    background: #000;
+                    height: 500px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .alinhamento-perfeito-filho {
+                    background: #f00;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                }
+            </style>
+        </section>
+        <hr>
+        <section>
+            <h2>Tela de Login</h2>
+            <p> login.html </p>
+            <div class="alinhamento-perfeito">
+                <div class="form-principal">
+
+	<div class="form-principal-filho">
+		<label>Telefone</label>
+		<input type="text" placeholder="Telefone">
+	</div>
+	
+
+</div>
+            </div>
+            <style>
+                .alinhamento-perfeito {
+                    background: #000;
+                    height: 500px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .alinhamento-perfeito-filho {
+                    background: #f00;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                }
+            </style>
+        </section>
+    </main>
+</body>
+</html>
